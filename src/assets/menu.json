@@ -1,0 +1,121 @@
+{
+    "breakfastMenu": [
+        {
+            "id": "01",
+            "name": "American coffee",
+            "price": "$5"
+        },
+        {
+            "id": "02",
+            "name": "Coffee with milk",
+            "price": "$7"
+        },
+        {
+            "id": "03",
+            "name": "Sandwich",
+            "price": "$10"
+        },
+        {
+            "naturalJuices": [
+                {
+                    "id": "04",
+                    "name": "Orange Juice",
+                    "price": "$7"
+                },
+                {
+                    "id": "05",
+                    "name": "Tangerine Juice",
+                    "price": "$7"
+                }
+            ]
+        }
+    ],
+    "lunchMenu": [
+        {
+            "Burgers": [
+                {
+                    "singleBurger": [
+                        {
+                            "id": "06",
+                            "name": "Meat",
+                            "price": "$10",
+                            "type": "Meat"
+                        },
+                        {
+                            "id": "07",
+                            "name": "Chiken",
+                            "price": "$10",
+                            "type": "Chiken"
+                        },
+                        {
+                            "id": "08",
+                            "name": "Vegetarian",
+                            "price": "$10",
+                            "type": "Vegetarian"
+                        }
+                    ]
+                },
+                {
+                    "doubleBurger": [
+                        {
+                            "id": "09",
+                            "name": "Meat",
+                            "price": "$15",
+                            "type": "Meat"
+                        },
+                        {
+                            "id": "10",
+                            "name": "Chiken",
+                            "price": "$15",
+                            "type": "Chiken"
+                        },
+                        {
+                            "id": "11",
+                            "name": "Vegetarian",
+                            "price": "$15",
+                            "type": "Vegetarian"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Side Dishes": [
+                {
+                    "id": "12",
+                    "name": "French Fries",
+                    "price": "$5"
+                },
+                {
+                    "id": "13",
+                    "name": "Onion Rings",
+                    "price": "$5"
+                }
+            ]
+        },
+        {
+            "Drinks": [
+                {
+                    "id": "14",
+                    "name": "Bottle of Water 500ml",
+                    "price": "$5"
+                },
+                {
+                    "id": "15",
+                    "name": "Bottle of Water 700ml",
+                    "price": "$7"
+                },
+                {
+                    "id": "16",
+                    "name": "Soda 500ml",
+                    "price": "$7"
+                },
+                {
+                    "id": "17",
+                    "name": "Soda 750ml",
+                    "price": "$10"
+                }
+            ]
+        }
+    ]
+}
