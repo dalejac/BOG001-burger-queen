@@ -1,5 +1,14 @@
 {
   "projects": {
     "staging": "burguer-queen-be936"
+  },
+  "targets": {
+    "burguer-queen-be936": {
+      "hosting": {
+        "BurgerQueen": [
+          "burguer-queen-be936"
+        ]
+      }
+    }
   }
 }
