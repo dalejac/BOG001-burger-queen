@@ -5,17 +5,14 @@
 export const environment = {
   production: false,
   firebase: {
-    firebaseConfig = {
-      apiKey: "AIzaSyC7tWwfI4YeewzmkcPW0uoztOl-lk4PNiE",
-      authDomain: "burguer-queen-be936.firebaseapp.com",
-      databaseURL: "https://burguer-queen-be936.firebaseio.com",
-      projectId: "burguer-queen-be936",
-      storageBucket: "burguer-queen-be936.appspot.com",
-      messagingSenderId: "481244752590",
-  //appId: "1:481244752590:web:7d57e28169642cc0003e9f",
-  //measurementId: "G-3TXXV4KT90"
+    apiKey: "AIzaSyC7tWwfI4YeewzmkcPW0uoztOl-lk4PNiE",
+    authDomain: "burguer-queen-be936.firebaseapp.com",
+    databaseURL: "https://burguer-queen-be936.firebaseio.com",
+    projectId: "burguer-queen-be936",
+    storageBucket: "burguer-queen-be936.appspot.com",
+    messagingSenderId: "481244752590",
   }
-},
+};
 
 /*
  * For easier debugging in development mode, you can import the following file
