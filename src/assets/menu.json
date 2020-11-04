@@ -20,12 +20,14 @@
                 {
                     "id": "04",
                     "name": "Orange Juice",
-                    "price": "$7" 
+                    "price": "$7", 
+                    "image": "/assets/images/juice500.png"
                 },
                 {
                     "id": "05",
                     "name": "Tangerine Juice",
-                    "price": "$7"
+                    "price": "$7",
+                    "image": "/assets/images/juice700.png"
                 }
             ]
         }
