@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import * as data from '../assets/menu.json';
+
+
 
 @Injectable({
   providedIn: 'root'
@@ -7,4 +10,10 @@ import * as data from '../assets/menu.json';
 export class ProductsService {
 
   constructor() { }
+  
+  getProducts(): Observable<Array<Products>> {
+    return (data as any).Menu;
+  }
 }
+
+
