@@ -5,8 +5,10 @@ import { AppComponent } from './app.component';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
-import { MenuComponent } from './menu/menu.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MenuComponent } from './waiterModule/menu/menu.component';
 import { HomeComponent } from './home/home.component';
+import { ProductsService } from './products.service';
 
 @NgModule({
   declarations: [
@@ -18,9 +20,13 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers:
+  [
+    ProductsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
