@@ -1,10 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { MenuComponent } from './menu/menu.component';
+import { WaiterComponent } from './waiter/waiter.component';
 import { BreakfastComponent } from './breakfast/breakfast.component';
 import { LunchComponent } from './lunch/lunch.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    component: WaiterComponent
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
