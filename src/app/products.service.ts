@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Products } from 'src/app/model/product.model';
 import { HttpClient } from '@angular/common/http';
 import * as data from '../assets/menu.json';
+import { Menu } from './model/menu.model';
 
 
 
@@ -13,7 +13,7 @@ import * as data from '../assets/menu.json';
 
 export class ProductsService {
 
-  private products: Products[];
+  private products: Menu;
 
   constructor(private httpClient: HttpClient) {
 
@@ -21,8 +21,8 @@ export class ProductsService {
 
   apiURL = '../assets/menu.json';
 
-  getProducts(): Observable<Products[]> {
-    return this.httpClient.get<Products[]>(`${this.apiURL}`);
+  getProducts(): Observable<Menu> {
+    return this.httpClient.get<Menu>(`${this.apiURL}`);
   }
 }
 console.log(data);
