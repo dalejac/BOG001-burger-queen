@@ -7,15 +7,6 @@ body {
     background: #E5E5E5;
 }
 
-h1 {
-    display: flex;
-    font-family: 'Luckiest Guy';
-    font-size: 90px;
-    letter-spacing: 3px;
-    color:  rgba(45, 49, 66, 0.97);
-    justify-content: center;
-}
-
 footer {
     display: flex;
     margin-top: 12%;
