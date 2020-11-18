@@ -1,5 +1,14 @@
 @import url(https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap);
 
+h1 {
+    display: flex;
+    font-family: 'Luckiest Guy';
+    font-size: 90px;
+    letter-spacing: 3px;
+    color:  rgba(45, 49, 66, 0.97);
+    justify-content: center;
+}
+
 .home-inputs {
     display: flex;
     flex-flow: column wrap;
