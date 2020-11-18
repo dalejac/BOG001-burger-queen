@@ -5,4 +5,9 @@ li {
     color: #2D3142;
     text-align: center;
     font-family: 'poppins';
+    font-weight: 600;
+}
+
+h1 {
+    display: flex;
 }
