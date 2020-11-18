@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Products } from 'src/app/model/product.model';
+import { Menu } from 'src/app/model/menu.model';
+import { ProductsService } from 'src/app/products.service';
 
 @Component({
   selector: 'app-lunch',
@@ -8,17 +9,16 @@ import { Products } from 'src/app/model/product.model';
 })
 export class LunchComponent implements OnInit {
 
-  private records: Products[];
-  apiService: any;
+  private records: Menu;
 
-  constructor() { }
+  constructor(private apiService: ProductsService) { }
 
   ngOnInit(): void {
   }
 
   // tslint:disable-next-line: typedef
-  public getData() {
-    this.apiService.getData().subscribe((data: Products[]) => this.records = data);
+   getData(): void {
+    this.apiService.getProducts().subscribe((data: Menu) => this.records = data);
    }
 
 }
