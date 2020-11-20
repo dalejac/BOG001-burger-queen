@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap);
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #E5E5E5;
+}
+
+footer {
+    display: flex;
+    margin-top: 12%;
+    height: 9vh;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-family: 'poppins';
+    background-color: rgba(45, 49, 66, 0.97);
+}
