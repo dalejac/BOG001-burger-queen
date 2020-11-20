@@ -1,1 +1,11 @@
-<p>lunch works!</p>
+<div class="container-fluid">
+<div class="ods-box">
+    <div>
+    <a class="tab">Lunch</a>
+    </div>
+
+    <div *ngFor="let data of records?.lunchMenu">
+    {{ data.image }}
+    </div>
+</div>
+</div>
