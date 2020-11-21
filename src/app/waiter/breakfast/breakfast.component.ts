@@ -18,8 +18,6 @@ export class BreakfastComponent implements OnInit {
   }
 
 getData(): void {
- this.apiService.getProducts().subscribe((data: Menu) => { this.records = data;
-                                                                 console.log(this.records);
-                                                                 console.log(data); });
+ this.apiService.getProducts().subscribe((data: Menu) => { this.records = data });
 }
 }
