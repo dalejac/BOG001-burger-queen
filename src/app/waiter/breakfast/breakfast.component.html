@@ -1,6 +1,12 @@
-<p>breakfast works!</p>
-<div *ngIf="records">
-    <p> {{ records.breakfastMenu }}</p>
-   </div>
-   
-
+<div class="container-fluid">
+  <div class="ods-box">
+    <div>
+      <a class="tab">Breakfast</a>
+    </div>
+    
+    <div *ngFor=" let data of records?.breakfastMenu">
+      {{ data.name }} 
+      {{ data.price }}
+    </div>
+  </div>
+</div>

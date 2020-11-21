@@ -9,16 +9,15 @@ import { ProductsService } from 'src/app/products.service';
 })
 export class LunchComponent implements OnInit {
 
-  private records: Menu;
+  records: Menu;
 
   constructor(private apiService: ProductsService) { }
 
   ngOnInit(): void {
+    this.getData()
   }
 
-  // tslint:disable-next-line: typedef
-   getData(): void {
+  getData(): void {
     this.apiService.getProducts().subscribe((data: Menu) => this.records = data);
-   }
-
+  }
 }
