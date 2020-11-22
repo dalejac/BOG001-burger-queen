@@ -3,23 +3,26 @@
         {
             "id": "01",
             "name": "American coffee",
-            "price": "$5"
+            "price": "$5" ,
+            "image": "/assets/images/americancoffee.png"
         },
         {
             "id": "02",
             "name": "Coffee with milk",
-            "price": "$7"
+            "price": "$7",
+            "image": "/assets/images/coffeewithmilk.png"
         },
         {
             "id": "03",
             "name": "Sandwich",
-            "price": "$10"
+            "price": "$10",
+            "image": "/assets/images/sandwich.png"
         },
         {
             "id": "04",
             "name": "Orange Juice",
             "price": "$7",
-            "image": "/assets/images/juice700.png"
+            "image": "/assets/images/orange-juice.png"
         },
         {
             "id": "05",

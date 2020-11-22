@@ -6,6 +6,7 @@
     
     <div class="container">
     <div *ngFor=" let data of records?.breakfastMenu" class="content">
+      <img [src]='data.image'><br>
       {{ data.name }}<br>
       {{ data.price }}
     </div>
