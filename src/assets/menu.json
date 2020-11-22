@@ -3,7 +3,7 @@
         {
             "id": "01",
             "name": "American coffee",
-            "price": "$5" 
+            "price": "$5"
         },
         {
             "id": "02",
@@ -16,20 +16,16 @@
             "price": "$10"
         },
         {
-            "naturalJuices": [
-                {
-                    "id": "04",
-                    "name": "Orange Juice",
-                    "price": "$7", 
-                    "image": "/assets/images/juice700.png"
-                },
-                {
-                    "id": "05",
-                    "name": "Pinneaple Juice",
-                    "price": "$7",
-                    "image": "/assets/images/juice500.png"
-                }
-            ]
+            "id": "04",
+            "name": "Orange Juice",
+            "price": "$7",
+            "image": "/assets/images/juice700.png"
+        },
+        {
+            "id": "05",
+            "name": "Pinneaple Juice",
+            "price": "$7",
+            "image": "/assets/images/juice500.png"
         }
     ],
     "lunchMenu": [
@@ -43,7 +39,6 @@
                             "price": "$10",
                             "type": "Meat",
                             "image": "/assets/images/singleburger.png"
-
                         },
                         {
                             "id": "07",

@@ -4,9 +4,11 @@
       <a class="tab">Breakfast</a>
     </div>
     
-    <div *ngFor=" let data of records?.breakfastMenu">
-      {{ data.name }} 
+    <div class="container">
+    <div *ngFor=" let data of records?.breakfastMenu" class="content">
+      {{ data.name }}<br>
       {{ data.price }}
     </div>
+  </div>
   </div>
 </div>
