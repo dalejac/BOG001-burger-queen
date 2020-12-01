@@ -1,0 +1,31 @@
+.container-box {
+    margin-left: 65%;
+    margin-right: 3%;
+    display: flex;
+    flex-flow: column;
+}
+
+input {
+    flex-flow: column;
+    margin: 10px;
+    width: 305px;
+    height: 33px;
+    border: 1px solid #2D3142;
+    border-radius: 15px;
+}
+
+::placeholder {
+    color: #aaaaaa;
+    font-family: 'Poppins';
+    padding-left: 15px;
+}
+
+.ticket-h {
+    flex-flow: column;
+    font-family: 'Poppins';
+    font-weight: bold;
+    color: #2D3142;
+    border: 1px solid #2D3142;
+    border-radius: 5px 5px 0px 0px;
+    background: #FFD8B8;
+}
