@@ -3,13 +3,13 @@
     <div>
       <a class="tab">Breakfast</a>
     </div>
-    
+
     <div class="container">
-    <div *ngFor=" let data of records?.breakfastMenu" class="content">
-      <img [src]='data.image'><br>
-      {{ data.name }}<br>
-      {{ data.price }}
+      <div *ngFor="let data of records?.breakfastMenu" class="content">
+        <img [src]="data.image" /><br />
+        {{ data.name }}<br />
+        {{ data.price }}
+      </div>
     </div>
-  </div>
   </div>
 </div>
