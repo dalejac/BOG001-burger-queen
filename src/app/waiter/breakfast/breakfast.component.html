@@ -4,10 +4,10 @@
       <a class="tab">Breakfast</a>
     </div>
 
-    <div class="container">
+    <div class="container" (click)="addItem()">
       <div *ngFor="let data of records?.breakfastMenu" class="content">
-        <img [src]="data.image" /><br />
-        {{ data.name }}<br />
+        <img [src]="data.image"/><br/>
+        {{ data.name }}<br/>
         {{ data.price }}
       </div>
     </div>

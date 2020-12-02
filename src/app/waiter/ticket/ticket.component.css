@@ -9,7 +9,7 @@ input {
     flex-flow: column;
     margin: 10px;
     width: 305px;
-    height: 33px;
+    height: 35px;
     border: 1px solid #2D3142;
     border-radius: 15px;
 }
@@ -28,4 +28,9 @@ input {
     border: 1px solid #2D3142;
     border-radius: 5px 5px 0px 0px;
     background: #FFD8B8;
+}
+
+.ticket-b {
+    border: 1px solid #2d3142;
+    border-radius: 0px 0px 5px 5px;
 }

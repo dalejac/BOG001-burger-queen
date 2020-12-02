@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Menu } from 'src/app/model/menu.model';
 import { ProductsService } from 'src/app/products.service';
 
@@ -11,6 +11,8 @@ export class BreakfastComponent implements OnInit {
 
   records: Menu;
 
+  @Output() itemClicked: EventEmitter<any> = new EventEmitter();
+
   constructor(private apiService: ProductsService) { }
 
   ngOnInit(): void {
@@ -20,4 +22,10 @@ export class BreakfastComponent implements OnInit {
   getData(): void {
     this.apiService.getProducts().subscribe((data: Menu) => this.records = data);
   }
+
+  addItem(): void {
+    this.itemClicked.emit(this.records);
+    console.log('Añadido a la orden');
+  }
+
 }
