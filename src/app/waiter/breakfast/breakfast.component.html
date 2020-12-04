@@ -1,10 +1,11 @@
-<div class="container-fluid">
-  <div class="ods-box">
+<div>
+  <div class="style-box">
     <div>
       <a class="tab">Breakfast</a>
     </div>
-
+      
     <div class="container" (click)="addItem()">
+      <!-- <p class="title">Burgers</p> -->
       <div *ngFor="let data of records?.breakfastMenu" class="content">
         <img [src]="data.image"/><br/>
         {{ data.name }}<br/>
