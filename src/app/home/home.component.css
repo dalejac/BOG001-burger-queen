@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap);
+
+h1 {
+    display: flex;
+    font-family: 'Luckiest Guy';
+    font-size: 90px;
+    letter-spacing: 3px;
+    color:  rgba(45, 49, 66, 0.97);
+    justify-content: center;
+}
+
+.home-inputs {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 4% 11%;
+}
+
+input {
+    width: 50%;
+    height: 55px;
+    border-radius: 20px;
+    margin: 25px;
+    font-size: 28px;
+    font-weight: normal;
+    padding-left: 2%;
+    color: #aaaaaa;
+    border: 1px solid rgba(45, 49, 66, 0.97);
+    font-family: 'Poppins';
+}
+
+.home-btn {
+    display: flex;
+    margin: 6%;
+    justify-content: space-evenly;
+}
+
+button {
+    width: 35%;
+    height: 75px;
+    background-color: rgba(45, 49, 66, 0.97);font-family: 'Poppins';
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    border-radius: 60px;
+}
+
+footer {
+    display: flex;
+    margin-top: 12%;
+    height: 9vh;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-family: 'poppins';
+    background-color: rgba(45, 49, 66, 0.97);
+}

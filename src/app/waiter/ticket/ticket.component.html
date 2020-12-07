@@ -1,0 +1,29 @@
+<div class="container-box">
+<div class="order-info">
+    <input type="text" [(ngModel)]="name" placeholder="Customer">
+    <input type="text" [(ngModel)]="table" placeholder="Table">
+</div>
+
+<div class="ticket-h">
+    <p>Order:</p>
+    <p>Table: {{table}} </p>
+    <p>Customer: {{name}} </p>
+    <p>Waiter: {{waiter}} </p>
+</div>
+
+<div class="ticket-b">
+    <!-- *ngFor="let product of product -->
+    
+    {{ product }} <!-- (|json) Pipe JSON para transformar la data y que muestre los valores del objeto  -->
+    <button (click)="rest()">-</button>
+    {{ contador }}
+    <button (click)="sum()">+</button>
+    <button>Edit</button>
+    <button (click)="deleteItem()">Delete</button>
+
+<div>
+    <button class="sent">Place Order</button>
+</div>
+</div>
+
+</div>
