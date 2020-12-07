@@ -1,0 +1,88 @@
+* {
+    margin: 1%;
+    padding: 2%;
+    display: flex;
+  }
+
+ul{
+    position: absolute;
+    flex-wrap: nowrap;
+    list-style: none;
+    justify-content: space-between;
+    left: 30%;
+}
+
+h1{
+
+    font-family: 'Luckiest Guy';
+    font-size: 90px;
+    letter-spacing: 3px;
+    color: rgba(45, 49, 66, 0.97);
+    justify-content: center;
+    margin-left: 40px;
+}
+
+.principal{
+    position: absolute;
+    width: 96%;
+    height: 85%;
+    left: 1%;
+    top: 38%;
+
+background: #FFFFFF;
+border: 1px solid rgba(45, 49, 66, 0.97);
+box-sizing: border-box;
+border-radius: 38px;
+}
+
+.order1{
+    position: absolute;
+width: 705px;
+height: 85px;
+left: 170px;
+top: 244px;
+
+background: #FFFFFF;
+border: 2px solid #2D3142;
+box-sizing: border-box;
+border-radius: 15px;
+}
+
+.order2{
+    position: absolute;
+    width: 705px;
+    height: 86px;
+    left: 170px;
+    top: 352px;
+    
+    background: #FFFFFF;
+    border: 2px solid #2D3142;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.order3{
+    position: absolute;
+    width: 705px;
+    height: 83px;
+    left: 170px;
+    top: 461px;
+    
+    background: #FFFFFF;
+    border: 2px solid #2D3142;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.order4{
+    position: absolute;
+    width: 705px;
+    height: 86px;
+    left: 170px;
+    top: 567px;
+    
+    background: #FFFFFF;
+    border: 2px solid #2D3142;
+    box-sizing: border-box;
+    border-radius: 15px;
+}

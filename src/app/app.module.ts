@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { WaiterModule } from '../app/waiter/waiter.module';
 import { HomeComponent } from './home/home.component';
 import { ProductsService } from './products.service';
+import { ChefModule } from './chef/chef.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ProductsService } from './products.service';
     AngularFirestoreModule,
     HttpClientModule,
     FormsModule,
-    WaiterModule
+    WaiterModule,
+    ChefModule
   ],
   providers:
   [
