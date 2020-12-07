@@ -1,0 +1,97 @@
+* {
+  margin: 1%;
+  padding: 1%;
+  display: flex;
+}
+
+ul {
+
+  flex-wrap: nowrap;
+  list-style: none;
+  justify-content: space-between;
+  left: 30%;
+}
+
+.buttons {
+  background: #FE8832;
+  box-shadow: 0px 4px 4px rgba(70, 67, 67, 0.25);
+  border-radius: 35px;
+  border: hidden;
+  color: #FFFFFF;
+  width: 18%;
+  justify-content: center;
+}
+
+h1 {
+
+  font-family: 'Luckiest Guy';
+  font-size: 90px;
+  letter-spacing: 3px;
+  color: rgba(45, 49, 66, 0.97);
+  justify-content: center;
+  margin-left: 40px;
+}
+
+.principal {
+
+  width: 96%;
+  height: 100%;
+  left: 1%;
+  top: 38%;
+  background: #FFFFFF;
+  border: 1px solid rgba(45, 49, 66, 0.97);
+  box-sizing: border-box;
+  border-radius: 38px;
+}
+
+.orders {
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.order1 {
+  background: #FFFFFF;
+  border: 2px solid #2D3142;
+  box-sizing: border-box;
+  border-radius: 15px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.order2 {
+  background: #FFFFFF;
+  border: 2px solid #2D3142;
+  box-sizing: border-box;
+  border-radius: 15px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.order3 {
+  background: #FFFFFF;
+  border: 2px solid #2D3142;
+  box-sizing: border-box;
+  border-radius: 15px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.order4 {
+  background: #FFFFFF;
+  border: 2px solid #2D3142;
+  box-sizing: border-box;
+  border-radius: 15px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  height: 9vh;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-family: 'poppins';
+  background-color: rgba(45, 49, 66, 0.97);
+}
