@@ -3,6 +3,7 @@ body {
 }
 
 .style-box {
+    position: absolute;
     margin: 5% 2%;
 }
 

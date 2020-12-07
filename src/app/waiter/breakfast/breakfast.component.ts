@@ -11,7 +11,9 @@ export class BreakfastComponent implements OnInit {
 
   records: Menu;
 
-  @Output() itemClicked: EventEmitter<string> = new EventEmitter();
+  @Output() itemClicked: EventEmitter<any> = new EventEmitter();
+
+  orderItems = [ ];
 
   constructor(private apiService: ProductsService) { }
 
@@ -22,6 +24,18 @@ export class BreakfastComponent implements OnInit {
   getData(): void {
     this.apiService.getProducts().subscribe((data: Menu) => this.records = data);
   }
+
+  // tabSelector(): void {
+
+  // }
+
+  // addItem(i, name, price ): void {
+  //   const item = name + price;
+  //   const items = this.orderItems.push(item);
+  //   this.itemClicked.emit(items.toString());
+  //   console.log('Añadido a la orden');
+  //   console.log(i, item, items);
+  // }
 
   addItem(i, name, price ): void {
     const item = name + price;

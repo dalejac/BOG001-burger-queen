@@ -11,7 +11,7 @@ export class TicketComponent implements OnInit {
   name: string;
   table: number;
 
-  @Input() product: string;
+  @Input() product: any;
 
   contador = 1;
 

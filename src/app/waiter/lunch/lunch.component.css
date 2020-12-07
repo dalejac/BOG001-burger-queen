@@ -3,11 +3,13 @@ body {
 }
 
 .style-box {
+    position: absolute;
     margin: 5% 2%;
 }
 
 .tab {
     margin: 10px;
+    margin-left: 165px;
     font-family: 'Poppins';
     font-weight: 600;
     font-size: 23px;

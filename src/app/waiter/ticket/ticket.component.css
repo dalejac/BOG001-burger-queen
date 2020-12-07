@@ -1,4 +1,6 @@
 .container-box {
+    position: absolute;
+    margin-top: 5%; 
     margin-left: 65%;
     margin-right: 3%;
     display: flex;
@@ -42,4 +44,8 @@ input {
     font-family: 'Poppins';
     border-radius: 20px;
     background: #FE8832;
+}
+
+footer {
+    margin-top: 100%;
 }
