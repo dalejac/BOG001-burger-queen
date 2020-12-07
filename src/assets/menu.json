@@ -3,7 +3,7 @@
         {
             "id": "01",
             "name": "American coffee",
-            "price": "$5" ,
+            "price": "$5",
             "image": "/assets/images/americancoffee.png"
         },
         {
@@ -29,102 +29,56 @@
             "name": "Pinneaple Juice",
             "price": "$7",
             "image": "/assets/images/juice500.png"
-        }   
+        }
     ],
     "lunchMenu": [
         {
-            "Burgers": [
-                {
-                    "singleBurger": [
-                        {
-                            "id": "06",
-                            "name": "Meat",
-                            "price": "$10",
-                            "type": "Meat",
-                            "image": "/assets/images/singleburger.png"
-                        },
-                        {
-                            "id": "07",
-                            "name": "Chiken",
-                            "price": "$10",
-                            "type": "Chiken"
-                        },
-                        {
-                            "id": "08",
-                            "name": "Vegetarian",
-                            "price": "$10",
-                            "type": "Vegetarian"
-                        }
-                    ]
-                },
-                {
-                    "doubleBurger": [
-                        {
-                            "id": "09",
-                            "name": "Meat",
-                            "price": "$15",
-                            "type": "Meat",
-                            "image": "/assets/images/dobleburger.png"
-                        },
-                        {
-                            "id": "10",
-                            "name": "Chiken",
-                            "price": "$15",
-                            "type": "Chiken"
-                        },
-                        {
-                            "id": "11",
-                            "name": "Vegetarian",
-                            "price": "$15",
-                            "type": "Vegetarian"
-                        }
-                    ]
-                }
-            ]
+            "id": "06",
+            "name": "singleBurger",
+            "price": "$10",
+            "image": "/assets/images/singleburger.png"
         },
         {
-            "Side Dishes": [
-                {
-                    "id": "12",
-                    "name": "French Fries",
-                    "price": "$5",
-                    "image": "/assets/images/frenchfries.png"
-                },
-                {
-                    "id": "13",
-                    "name": "Onion Rings",
-                    "price": "$5",
-                    "image": "/assets/images/onionrings.png"
-                }
-            ]
+            "id": "09",
+            "name": "dobleBurger",
+            "price": "$15",
+            "image": "/assets/images/dobleburger.png"
         },
         {
-            "Drinks": [
-                {
-                    "id": "14",
-                    "name": "Bottle of Water 500ml",
-                    "price": "$5",
-                    "image": "assets/images/water500.png"
-                },
-                {
-                    "id": "15",
-                    "name": "Bottle of Water 700ml",
-                    "price": "$7",
-                    "image": "/assets/images/water700.png"
-                },
-                {
-                    "id": "16",
-                    "name": "Soda 500ml",
-                    "price": "$7",
-                    "image": "/assets/images/soda500.png"
-                },
-                {
-                    "id": "17",
-                    "name": "Soda 750ml",
-                    "price": "$10",
-                    "image": "/assets/images/soda700.png"
-                }
-            ]
+            "id": "12",
+            "name": "French Fries",
+            "price": "$5",
+            "image": "/assets/images/frenchfries.png"
+        },
+        {
+            "id": "13",
+            "name": "Onion Rings",
+            "price": "$5",
+            "image": "/assets/images/onionrings.png"
+        },
+        {
+            "id": "14",
+            "name": "Bottle of Water 500ml",
+            "price": "$5",
+            "image": "/assets/images/water500.png"
+        },
+        {
+            "id": "15",
+            "name": "Bottle of Water 700ml",
+            "price": "$7",
+            "image": "/assets/images/water500.png"
+        },
+        {
+            "id": "16",
+            "name": "Soda 500ml",
+            "price": "$7",
+            "image": "/assets/images/soda500.png"
+        },
+        {
+            "id": "17",
+            "name": "Soda 750ml",
+            "price": "$10",
+            "image": "/assets/images/soda500.png"
         }
     ]
 }
