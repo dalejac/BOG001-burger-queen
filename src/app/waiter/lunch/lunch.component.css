@@ -2,6 +2,10 @@ body {
     margin-top: 40px;
 }
 
+.style-box {
+    margin: 5% 2%;
+}
+
 .tab {
     margin: 10px;
     font-family: 'Poppins';
@@ -16,26 +20,34 @@ body {
 .container {
     margin: 10px 40% 10px 10px;
     display: grid;
-    grid-template-rows: 35% 35%;
+    grid-template-rows: 23% 35%;
+    /* 35% 35% */
     grid-template-columns: repeat(3, 1fr);
     border: 2px solid #2d3142;
+    border-radius: 0 10px 10px 10px;
+    background-color: white;
+    padding-top: 35px;
 }
 
 .content {
+    /* margin: 60px 30px -30px 20px; */
     display: flex;
-    margin: 15px;
+    margin: 15px 25px;
+    /* 15px */
+    /* 7% 15% */
     flex-direction: column;
     align-items: center;
     font-family: 'Poppins';
     border-radius: 10px;
-    border: 1px solid #2d3142;
-    padding: 15px;
-    background: #ffd8b8;
+    border: 1px solid #FFD8B8;
+    padding: 5%;
+    background: #FCEFE4;
     font-size: 18px;
     text-align: center;
 }
 
 img {
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 55%;
+    margin: -3%;
 }
