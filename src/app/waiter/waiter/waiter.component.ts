@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WaiterComponent implements OnInit {
 
-  clickedItem: any;
+  clickItem: any;
 
   constructor() { }
 

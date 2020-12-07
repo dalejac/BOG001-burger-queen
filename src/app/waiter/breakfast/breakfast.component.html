@@ -4,8 +4,8 @@
       <a class="tab">Breakfast</a>
     </div>
 
-    <div class="container" (click)="addItem()">
-      <div *ngFor="let data of records?.breakfastMenu" class="content">
+    <div class="container">
+      <div *ngFor="let data of records?.breakfastMenu; index as i" class="content" (click)="addItem(i, data.name, data.price)">
         <img [src]="data.image"/><br/>
         {{ data.name }}<br/>
         {{ data.price }}

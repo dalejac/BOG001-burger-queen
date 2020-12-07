@@ -12,12 +12,17 @@
 </div>
 
 <div class="ticket-b">
-    {{ product }}
+    
+    {{ product }} <!-- (|json) Pipe JSON para transformar la data y que muestre los valores del objeto  -->
     <button (click)="rest()">-</button>
-    <div>{{ contador }}</div>
+    {{ contador }}
     <button (click)="sum()">+</button>
     <button>Edit</button>
     <button (click)="deleteItem()">Delete</button>
 
+<div>
+    <button class="sent">Place Order</button>
 </div>
+</div>
+
 </div>

@@ -34,3 +34,12 @@ input {
     border: 1px solid #2d3142;
     border-radius: 0px 0px 5px 5px;
 }
+
+.sent {
+    width: 139px;
+    height: 42px;
+    color: #ffffff;
+    font-family: 'Poppins';
+    border-radius: 20px;
+    background: #FE8832;
+}
