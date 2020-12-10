@@ -30,11 +30,24 @@ input {
     border: 1px solid #2D3142;
     border-radius: 5px 5px 0px 0px;
     background: #FFD8B8;
+    padding-left: 15px;
+}
+
+.container-data {
+    border: 1px solid #2d3142;
+    border-radius: 0px 0px 5px 5px;
 }
 
 .ticket-b {
     border: 1px solid #2d3142;
-    border-radius: 0px 0px 5px 5px;
+    font-family: 'Poppins';
+    padding: 10px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
 }
 
 .sent {
