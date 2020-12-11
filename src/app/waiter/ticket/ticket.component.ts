@@ -11,7 +11,7 @@ export class TicketComponent implements OnInit {
   name: string;
   table: number;
 
-  @Input() products: string[];
+  @Input() products: any;
 
   contador = 1;
 
@@ -28,8 +28,10 @@ export class TicketComponent implements OnInit {
     this.contador += 1;
   }
 
-  deleteItem(i: number): void {
+  deleteItem(product, i ): void {
     this.products.splice(i, 1);
     console.log('Item eliminado');
+    console.log(this.products);
+    console.log(product);
   }
 }
