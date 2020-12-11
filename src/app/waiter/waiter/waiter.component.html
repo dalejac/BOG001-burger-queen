@@ -1,5 +1,5 @@
 <app-menu></app-menu>
 <app-breakfast (itemClicked)="clickItem=$event"></app-breakfast>
-<app-lunch></app-lunch>
+<app-lunch (itemClicked)="clickItem=$event"></app-lunch>
 <app-ticket [products]="clickItem"></app-ticket>
 <footer>Made by Majo, Nati y Ale </footer>
