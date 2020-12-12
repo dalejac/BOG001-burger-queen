@@ -13,12 +13,12 @@ export class LunchComponent implements OnInit {
 
   @Output() itemClicked: EventEmitter<any> = new EventEmitter();
 
-  orderItems = [];
+  orderItem = [];
 
   constructor(private apiService: ProductsService) { }
 
   ngOnInit(): void {
-    this.getData()
+    this.getData();
   }
 
   getData(): void {
@@ -27,10 +27,10 @@ export class LunchComponent implements OnInit {
 
   addItem(i, name, price ): void {
     const item = name + ' ' + price;
-    const items = this.orderItems.push(item);
-    this.itemClicked.emit(this.orderItems);
+    const items = this.orderItem.push(item);
+    this.itemClicked.emit(this.orderItem);
     console.log('Añadido a la orden');
-    console.log(i, item, items, this.orderItems);
+    console.log(i, item, items, this.orderItem);
   }
-  
+
 }

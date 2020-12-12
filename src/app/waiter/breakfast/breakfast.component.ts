@@ -30,7 +30,7 @@ export class BreakfastComponent implements OnInit {
   // }
 
   addItem(i, name, price ): void {
-    const item = name + ' ' + price;
+    const item = name + '' + price;
     const items = this.orderItems.push(item);
     this.itemClicked.emit(this.orderItems);
     console.log('Añadido a la orden');
