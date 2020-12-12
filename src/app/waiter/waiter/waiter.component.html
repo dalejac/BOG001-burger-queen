@@ -1,5 +1,19 @@
 <app-menu></app-menu>
-<app-breakfast (itemClicked)="clickItem = $event"></app-breakfast>
-<app-lunch></app-lunch>
+<div class="style-box">
+    <div [class.active]="viewMode == 'breakfast'" rel="breakfast" (click)="viewMode = 'breakfast'">
+        <a class="tab-breakfast">Breakfast</a>
+    </div>
+    <div [class.active]="viewMode == 'lunch'" rel="lunch" (click)="viewMode = 'lunch'">
+        <a class="tab-lunch">Lunch</a>
+    </div>
+    <div [ngSwitch]="viewMode">
+        <div id="breakfast" *ngSwitchCase="'breakfast'">
+        <app-breakfast (itemClicked)="clickItem = $event"> </app-breakfast>
+    </div>
+        <div id="lunch" *ngSwitchCase="'lunch'">
+            <app-lunch></app-lunch>
+        </div>
+    </div>
+</div>
 <app-ticket [product]="clickItem"></app-ticket>
 <footer>Made by Majo, Nati y Ale</footer>
