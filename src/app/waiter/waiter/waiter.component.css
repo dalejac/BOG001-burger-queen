@@ -1,3 +1,33 @@
+.style-box {
+  position: absolute;
+  margin: 5% 2%;
+}
+
+.tab-breakfast {
+    position: absolute;
+    margin: -12px 10px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 23px;
+    border: 2px solid #2d3142;
+    border-radius: 5px 5px 0 0;
+    padding: 10px 20px;
+    color: #2d3142;
+}
+
+.tab-lunch {
+    margin: 10px;
+    margin-left: 165px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 23px;
+    border: 2px solid #2d3142;
+    border-radius: 5px 5px 0 0;
+    padding: 10px 20px;
+    color: #2d3142;
+}
+
+
 footer {
     display: flex;
     margin-top: 100%;

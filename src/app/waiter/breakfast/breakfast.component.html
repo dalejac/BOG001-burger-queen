@@ -1,9 +1,5 @@
 <div>
   <div class="style-box">
-    <div>
-      <a class="tab">Breakfast</a>
-    </div>
-
     <div class="container">
       <div *ngFor="let data of records?.breakfastMenu; index as i" class="content" (click)="addItem(i, data.name, data.price)">
         <img [src]="data.image"/><br/>
