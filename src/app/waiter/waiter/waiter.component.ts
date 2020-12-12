@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WaiterComponent implements OnInit {
 
+  viewMode = 'breakfast';
+
   clickItem: any;
 
   constructor() { }
