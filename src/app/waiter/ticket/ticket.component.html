@@ -11,17 +11,18 @@
     <p>Waiter: {{waiter}} </p>
 </div>
 
-<div class="ticket-b">
-    <!-- *ngFor="let product of product -->
+<div class="container-data">
+<div id="ticket" class="ticket-b" *ngFor="let product of products; index as i">
     
     {{ product }} <!-- (|json) Pipe JSON para transformar la data y que muestre los valores del objeto  -->
+    <br>
     <button (click)="rest()">-</button>
     {{ contador }}
     <button (click)="sum()">+</button>
-    <button>Edit</button>
-    <button (click)="deleteItem()">Delete</button>
+    <button (click)="deleteItem(product, i)"><i class="fas fa-trash-alt"></i></button>
+</div>
 
-<div>
+<div class="btn">
     <button class="sent">Place Order</button>
 </div>
 </div>

@@ -13,7 +13,7 @@ export class BreakfastComponent implements OnInit {
 
   @Output() itemClicked: EventEmitter<any> = new EventEmitter();
 
-  orderItems = [ ];
+  orderItems = [];
 
   constructor(private apiService: ProductsService) { }
 
@@ -29,19 +29,12 @@ export class BreakfastComponent implements OnInit {
 
   // }
 
-  // addItem(i, name, price ): void {
-  //   const item = name + price;
-  //   const items = this.orderItems.push(item);
-  //   this.itemClicked.emit(items.toString());
-  //   console.log('Añadido a la orden');
-  //   console.log(i, item, items);
-  // }
-
   addItem(i, name, price ): void {
-    const item = name + price;
-    this.itemClicked.emit(item);
+    const item = name + ' ' + price;
+    const items = this.orderItems.push(item);
+    this.itemClicked.emit(this.orderItems);
     console.log('Añadido a la orden');
-    console.log(i);
+    console.log(i, item, items, this.orderItems);
   }
 
 }
