@@ -10,6 +10,7 @@ export class WaiterComponent implements OnInit {
   viewMode = 'breakfast';
 
   clickItem: any;
+  clickedItem: any;
 
   constructor() { }
 

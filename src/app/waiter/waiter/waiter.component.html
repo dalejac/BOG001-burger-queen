@@ -11,10 +11,10 @@
         <app-breakfast (itemClicked)="clickItem = $event"> </app-breakfast>
     </div>
         <div id="lunch" *ngSwitchCase="'lunch'">
-            <app-lunch></app-lunch>
+            <app-lunch (itemClicked)="clickedItem = $event"></app-lunch>
         </div>
     </div>
 </div>
-<app-ticket [product]="clickItem"></app-ticket>
+<app-ticket [product]="clickItem" [Product]="clickedItem"></app-ticket>
 <footer>Made by Majo, Nati y Ale</footer>
 
