@@ -1,4 +1,5 @@
 import { Component , OnInit } from '@angular/core';
+import { FirestoreService } from '../services/firestore.service';
 
 @Component ({
       selector: 'app-chef' ,
@@ -7,7 +8,9 @@ import { Component , OnInit } from '@angular/core';
 })
 export class ChefComponent implements OnInit {
 
-      constructor() {console.log("componente cargado"); }
+      items: any; 
+
+      constructor(private firestore: FirestoreService) {console.log("componente cargado"); }
       
       
       ngOnInit(): void {

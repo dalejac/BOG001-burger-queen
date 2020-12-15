@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Order } from 'src/app/model/order.model';
+import { FirestoreService } from 'src/app/services/firestore.service';
 
 
 @Component({
@@ -7,16 +9,16 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./ticket.component.css']
 })
 export class TicketComponent implements OnInit {
-  waiter: string;
-  name: string;
-  table: number;
+  waiter = "";
+  name = "";
+  table = 0;
 
-  @Input() product: [any];
-  @Input() Product: [any];
+  @Input() breakProduct: any[] = [];
+  @Input() lunchProduct: any[] = [];
 
   contador = 1;
 
-  constructor() { }
+  constructor(private fireStore: FirestoreService) { }
 
   ngOnInit(): void {
   }
@@ -29,19 +31,21 @@ export class TicketComponent implements OnInit {
     this.contador += 1;
   }
 
-  deleteItem(product, i): void {
-    this.product.splice(i, 1);
+  deleteItem(i): void {
+    this.breakProduct.splice(i, 1);
     console.log('Item eliminado');
-    console.log(this.product);
+    console.log(this.breakProduct);
   }
 
-  deleteItems(Product, i): void {
-    this.Product.splice(i, 1);
+  deleteItems(i): void {
+    this.lunchProduct.splice(i, 1);
     console.log('Item eliminado');
-    console.log(this.Product);
+    console.log(this.lunchProduct);
   }
 
   orderPlaced(): void {
+    const order: Order = {waiter: this.waiter, table: this.table, customer: this.name, products: this.breakProduct.concat(this.lunchProduct)};
+    this.fireStore.add(order);
     alert('Order has been sent!');
   }
 }
