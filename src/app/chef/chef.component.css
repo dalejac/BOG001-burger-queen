@@ -6,6 +6,18 @@
   box-sizing: border-box;
 }
 
+.header{
+    flex-wrap: nowrap;
+}
+.fas{
+    color: rgba(45, 49, 66, 0.97);
+}
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 5%;
+}
 .titulos {
 
   flex-wrap: nowrap;
@@ -36,16 +48,14 @@ h1 {
   font-size: 90px;
   letter-spacing: 3px;
   color: rgba(45, 49, 66, 0.97);
-  justify-content: center;
-  margin-left: 40px;
+  margin-left: 10%;
 }
 
 .principal {
 
   width: 96%;
   height: 100%;
-  left: 1%;
-  top: 38%;
+  margin-left: 2%;
   background: #FFFFFF;
   border: 1px solid rgba(45, 49, 66, 0.97);
   box-sizing: border-box;
