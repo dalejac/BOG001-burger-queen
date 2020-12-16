@@ -34,13 +34,57 @@
     "lunchMenu": [
         {
             "id": "06",
-            "name": "singleBurger",
+            "name": "Single Burger",
             "price": "$10",
-            "image": "/assets/images/singleburger.png"
-        },
+            "image": "/assets/images/singleburger.png",
+            "types": [
+                {
+                    "type": "Meet"
+                },
+                {
+                    "type": "Chicken"
+                },  
+                {
+                    "type": "Vegetarian"
+                }    
+            ],
+            "toppings": [
+                {
+                    "topping": "Onions"
+                },
+                {
+                    "topping": "Lettuce"
+                },    
+                {
+                    "topping": "Tomato"
+                }    
+            ],
+            "sauces": [
+                {
+                    "sauce": "Ketchup"
+                },  
+                {
+                    "sauce": "Mustard"
+                },
+                {
+                    "sauce": "Mayonnaise"
+                }  
+            ],
+            "additions": [
+                {
+                    "addition": "Cheese",
+                    "price": "$1"
+                },
+                {
+                    "addition": "Egg",
+                    "price": "$1"
+                }
+            ]
+        },    
+
         {
             "id": "09",
-            "name": "dobleBurger",
+            "name": "Double Burger",
             "price": "$15",
             "image": "/assets/images/dobleburger.png"
         },
