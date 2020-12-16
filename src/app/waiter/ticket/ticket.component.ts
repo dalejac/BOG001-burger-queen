@@ -11,7 +11,8 @@ import { FirestoreService } from 'src/app/services/firestore.service';
 export class TicketComponent implements OnInit {
   waiter = "";
   name = "";
-  table = 0;
+  table = "";
+  num = '00'+ Math.floor(Math.random() * 100)
 
   @Input() breakProduct: any[] = [];
   @Input() lunchProduct: any[] = [];
@@ -44,7 +45,7 @@ export class TicketComponent implements OnInit {
   }
 
   orderPlaced(): void {
-    const order: Order = {waiter: this.waiter, table: this.table, customer: this.name, products: this.breakProduct.concat(this.lunchProduct)};
+    const order: Order = {orderNum: this.num, waiter: this.waiter, table: this.table, customer: this.name, products: this.breakProduct.concat(this.lunchProduct)};
     this.fireStore.add(order);
     alert('Order has been sent!');
   }

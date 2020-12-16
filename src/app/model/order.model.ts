@@ -1,5 +1,6 @@
 export interface Order {
-    table: number;
+    orderNum: string;
+    table: string;
     customer: string;
     waiter: string;
     products: any[]; 

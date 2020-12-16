@@ -2,36 +2,19 @@
 
 <div class="principal">
 
-<div class="titulos">
+<div class="titles">
 <ul>
   <li>Order #</li>
   <li>Time Check in/Check out</li>
   <li>Order status </li>
 </ul>
 </div>
+
 <div class="orders">
-  <div class="order1">
-    <p>Order # 0005</p>
+  <div class="order1" *ngFor="let orders of order$|async">
+    <p>{{orders.orderNum}}</p>
     <p>10:10am/10:50am</p>
-    <input type="button" value="Pending" class="buttons">
-  </div>
-
-  <div class="order2">
-    <p>Order # 0005</p>
-    <p>10:10am/10:50am</p>
-    <input type="button" value="Pending" class="buttons">
-  </div>
-
-  <div class="order3">
-    <p>Order # 0005</p>
-    <p>10:10am/10:50am</p>
-    <input type="button" value="Pending" class="buttons">
-  </div>
-
-  <div class="order4">
-    <p>Order # 0005</p>
-    <p>10:10am/10:50am</p>
-    <input type="button" value="Pending" class="buttons">
+    <button class="buttons">Pending</button>
   </div>
 
 </div>

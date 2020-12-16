@@ -1,5 +1,8 @@
 import { Component , OnInit } from '@angular/core';
 import { FirestoreService } from '../services/firestore.service';
+import { Order } from '../model/order.model';
+import { Observable } from 'rxjs'; 
+
 
 @Component ({
       selector: 'app-chef' ,
@@ -8,12 +11,16 @@ import { FirestoreService } from '../services/firestore.service';
 })
 export class ChefComponent implements OnInit {
 
-      items: any; 
+      order$: Observable<Order[]>;
 
       constructor(private firestore: FirestoreService) {console.log("componente cargado"); }
       
       
       ngOnInit(): void {
+            this.getAll() 
       }
     
+      getAll(): void {
+            this.order$ = this.firestore.getAll();
+      }
     }
