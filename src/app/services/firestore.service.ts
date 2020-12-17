@@ -26,6 +26,10 @@ export class FirestoreService {
       })));
   }
 
+  // getTime() {
+  //   this.firestore.serverTimestamp()
+  // }
+
   add(item: Order) {
     this.orderCollection.add(item);
   }
