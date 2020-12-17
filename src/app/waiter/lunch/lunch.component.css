@@ -17,7 +17,7 @@ body {
 .content {
     /* margin: 60px 30px -30px 20px; */
     display: flex;
-    margin: 15px 25px;
+    margin: 15px 25px 5px 10px;
     /* 15px */
     /* 7% 15% */
     flex-direction: column;

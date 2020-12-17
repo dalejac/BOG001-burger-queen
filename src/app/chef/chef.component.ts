@@ -12,6 +12,7 @@ import { Observable } from 'rxjs';
 export class ChefComponent implements OnInit {
 
       status = true;
+      time:any;
       text = 'Pending';
 
       order$: Observable<Order[]>;
@@ -20,11 +21,17 @@ export class ChefComponent implements OnInit {
 
 
       ngOnInit(): void {
-            this.getAll()
+            this.getAll();
+            this.getTime()
       }
 
       getAll(): void {
             this.order$ = this.firestore.getAll();
+      }
+
+      getTime(): void {
+            this.time = this.firestore.getTime();
+            console.log(this.time);
       }
 
       changeStatus(orders): void {
