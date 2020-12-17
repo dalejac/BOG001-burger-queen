@@ -1,4 +1,3 @@
-
 * {
   margin: 1%;
   padding: 1%;
@@ -6,8 +5,41 @@
   box-sizing: border-box;
 }
 
-.titulos {
+.header{
+    flex-wrap: nowrap;
+}
 
+.fas{
+    color: rgba(45, 49, 66, 0.97);
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+h1 {
+  font-family: 'Luckiest Guy';
+  font-size: 90px;
+  letter-spacing: 3px;
+  color: rgba(45, 49, 66, 0.97);
+  margin-left: 10%;
+}
+
+.principal {
+  width: 96%;
+  height: 100%;
+  margin-left: 2%;
+  background: #FFFFFF;
+  border: 1px solid rgba(45, 49, 66, 0.97);
+  box-sizing: border-box;
+  border-radius: 38px;
+  flex-flow: column;
+}
+
+.titles {
   flex-wrap: nowrap;
   list-style: none;
   font-family: 'Poppins';
@@ -19,45 +51,13 @@ ul{
     justify-content: space-between;
 }
 
-.buttons {
-  background: #FE8832;
-  box-shadow: 0px 4px 4px rgba(70, 67, 67, 0.25);
-  border-radius: 35px;
-  border: hidden;
-  color: #FFFFFF;
-  width: 18%;
-  justify-content: center;
-  font-family: 'Poppins';
-}
-
-h1 {
-
-  font-family: 'Luckiest Guy';
-  font-size: 90px;
-  letter-spacing: 3px;
-  color: rgba(45, 49, 66, 0.97);
-  justify-content: center;
-  margin-left: 40px;
-}
-
-.principal {
-
-  width: 96%;
-  height: 100%;
-  left: 1%;
-  top: 38%;
-  background: #FFFFFF;
-  border: 1px solid rgba(45, 49, 66, 0.97);
-  box-sizing: border-box;
-  border-radius: 38px;
-  flex-flow: column;
-}
-
 .orders {
   width: 100%;
   height: 100%;
   flex-wrap: wrap;
   font-family: 'Poppins';
+  margin: 0%;
+  margin-bottom: 2%;
 }
 
 .order1 {
@@ -69,35 +69,31 @@ h1 {
   width: 100%;
 }
 
-.order2 {
-  background: #FFFFFF;
-  border: 2px solid #2D3142;
-  box-sizing: border-box;
-  border-radius: 15px;
-  justify-content: space-between;
-  width: 100%;
+.pending {
+  background: #FE8832;
+  box-shadow: 0px 4px 4px rgba(70, 67, 67, 0.25);
+  border-radius: 35px;
+  border: hidden;
+  color: #FFFFFF;
+  width: 18%;
+  justify-content: center;
+  font-family: 'Poppins';
 }
 
-.order3 {
-  background: #FFFFFF;
-  border: 2px solid #2D3142;
-  box-sizing: border-box;
-  border-radius: 15px;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.order4 {
-  background: #FFFFFF;
-  border: 2px solid #2D3142;
-  box-sizing: border-box;
-  border-radius: 15px;
-  justify-content: space-between;
-  width: 100%;
+.done {
+  background: #679b3e;
+  box-shadow: 0px 4px 4px rgba(70, 67, 67, 0.25);
+  border-radius: 35px;
+  border: hidden;
+  color: #FFFFFF;
+  width: 18%;
+  justify-content: center;
+  font-family: 'Poppins';
 }
 
 footer {
   display: flex;
+  width: 100%;
   height: 9vh;
   color: white;
   align-items: center;
