@@ -17,6 +17,9 @@
 <div class="orders">
   <div class="order1" *ngFor="let orders of order$|async">
     <p>{{orders.orderNum}}</p>
+    <div class="productsChefDiv">
+    <p class="productsChef">{{orders.products}}</p>
+    </div>
     <p>10:10am/10:50am</p>
     <button class="buttons" [ngClass]="{'pending': status, 'done': !status}" (click)="changeStatus(orders)">{{text}}</button>
   </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import Swal from 'sweetalert2/dist/sweetalert2.js';
 import { Order } from 'src/app/model/order.model';
 import { FirestoreService } from 'src/app/services/firestore.service';
 
@@ -43,13 +44,12 @@ export class TicketComponent implements OnInit {
     console.log('Item eliminado');
     console.log(this.lunchProduct);
   }
-
+  
   orderPlaced(): void {
     const order: Order = {orderNum: this.num, waiter: this.waiter, table: this.table, customer: this.name, products: this.breakProduct.concat(this.lunchProduct)};
     this.fireStore.add(order);
     this.breakProduct.splice(0, this.breakProduct.length);
     this.lunchProduct.splice(0, this.lunchProduct.length);
-
-    alert('Order has been sent!');
+    Swal.fire('Thank you...', 'Order sent succesfully!!', 'success');
   }
 }
