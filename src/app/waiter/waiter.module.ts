@@ -7,7 +7,8 @@ import { WaiterComponent } from './waiter/waiter.component';
 import { MenuComponent } from './menu/menu.component';
 import { BreakfastComponent } from './breakfast/breakfast.component';
 import { LunchComponent } from './lunch/lunch.component';
-import { TicketComponent } from './ticket/ticket.component'; 
+import { TicketComponent } from './ticket/ticket.component';
+import { ModalComponent } from './modal/modal.component'; 
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { TicketComponent } from './ticket/ticket.component';
     MenuComponent,
     BreakfastComponent,
     LunchComponent,
-    TicketComponent
+    TicketComponent,
+    ModalComponent
   ],
 
   imports: [
