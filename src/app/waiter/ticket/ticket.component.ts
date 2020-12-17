@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import Swal from 'sweetalert2/dist/sweetalert2.js';
 
 
 @Component({
@@ -41,7 +42,10 @@ export class TicketComponent implements OnInit {
     console.log(this.Product);
   }
 
-  orderPlaced(): void {
-    alert('Order has been sent!');
+  // orderPlaced(): void {
+  //   alert('Order has been sent!');
+  // }
+  alertWithSuccess() {
+    Swal.fire('Thank you...', 'Order sent succesfully!!', 'success')
   }
 }
