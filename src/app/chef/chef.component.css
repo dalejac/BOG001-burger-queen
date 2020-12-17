@@ -76,6 +76,7 @@ ul{
   border: hidden;
   color: #FFFFFF;
   width: 18%;
+  height: 25%;
   justify-content: center;
   font-family: 'Poppins';
 }
@@ -100,4 +101,12 @@ footer {
   justify-content: center;
   font-family: 'poppins';
   background-color: rgba(45, 49, 66, 0.97);
+}
+
+.productsChefDiv{
+  width: 20%;
+}
+.productsChef{
+  
+  flex-wrap: wrap;
 }
