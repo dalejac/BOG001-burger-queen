@@ -1,7 +1,7 @@
 <div class="container-box">
 <div class="order-info">
-    <input type="text" [(ngModel)]="name" placeholder="Customer">
-    <input type="text" [(ngModel)]="table" placeholder="Table">
+    <input type="text" [(ngModel)]="name" class="mainInfo" placeholder="Customer">
+    <input type="text" [(ngModel)]="table" class="mainInfo" placeholder="Table">
 </div>
 
 <div class="ticket-h">
@@ -34,7 +34,7 @@
 </div>
 
 <div class="btn">
-    <button class="sent" (click)="orderPlaced()">Place Order</button>
+    <button class="sent" (click)="orderPlaced(); mainInfo.value =''">Place Order</button>
 </div>
 </div>
 

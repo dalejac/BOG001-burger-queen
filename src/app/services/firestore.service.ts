@@ -3,6 +3,8 @@ import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/fire
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/internal/operators';
 import { Order } from '../model/order.model';
+// import firebase from 'firebase/app';
+// import Timestamp = firebase.firestore.Timestamp;
 
 @Injectable({
   providedIn: 'root'

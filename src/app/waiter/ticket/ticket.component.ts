@@ -47,6 +47,9 @@ export class TicketComponent implements OnInit {
   orderPlaced(): void {
     const order: Order = {orderNum: this.num, waiter: this.waiter, table: this.table, customer: this.name, products: this.breakProduct.concat(this.lunchProduct)};
     this.fireStore.add(order);
+    this.breakProduct.splice(0, this.breakProduct.length);
+    this.lunchProduct.splice(0, this.lunchProduct.length);
+
     alert('Order has been sent!');
   }
 }
